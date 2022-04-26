@@ -3,9 +3,7 @@
     padding: 0;
 }
 div{
-    font-family: 'Hind Siliguri', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Press Start 2P', cursive;
+    font-family: pokemon;
     font-size: 1.2em;
 }
 .upper{
@@ -187,6 +185,11 @@ a{
     height: 50vh;
     width: 100%;
     box-sizing: border-box;
+   
+}
+@font-face {
+    font-family: pokemon;
+    src: url(Pokemon_Generation_1_Regular/pokemon_generation_1.ttf) format("truetype");
 }
 .about{
     padding: 20px;
@@ -195,6 +198,8 @@ a{
     border-right: 5px solid #004271;
     border-top: 5px solid #004271;
     box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    font-size: 2em;
 }
 .headshot{
     width: 250px;
@@ -215,7 +220,7 @@ a{
 }
 li{
     padding: 5px;
-    list-style-type: circle;
+    list-style-type: none;
 }
 footer{
     border: 5px solid #004271;
@@ -241,6 +246,7 @@ nav{
 }
 .nav-item{
     font-size: .75em !important;
+    font-family: 'Press Start 2P', cursive;
 }
 .projects{
     padding-top: 70px;
@@ -252,6 +258,8 @@ h1{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
+    font-family: 'Press Start 2P', cursive;
+
 }
 h2{
     font-size: 1em;
@@ -267,7 +275,7 @@ h2{
     text-decoration: underline;
     color: black;
     font-size: .7em;
-    margin-left: -20px;
+    margin-left: -5px;
 }
 .bottom{
     text-align: center;
@@ -289,7 +297,6 @@ h2{
     border-right: 5px solid #004271;
     box-sizing: border-box;
     padding-top: 70px;
-    position: relative;
 }
 .linkedin{
     text-decoration: none !important;
@@ -304,9 +311,13 @@ form{
 }
 input{
     margin-bottom: 20px !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 1.5em !important;
 }
 textarea{
     margin-bottom: 10px !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 1.5em !important;
 }
 .projdesc{
     border-right: 5px solid #004271;
@@ -319,7 +330,10 @@ textarea{
 }
 .descwrap{
     margin-top: 50px;
-    padding: 10px;
+    padding: 20px;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+
 }
 .date{
     text-align: center;
@@ -327,4 +341,9 @@ textarea{
 .sitelink{
     text-decoration: underline;
     color: black;
+}
+.percent{
+    font-family: 'Press Start 2P', cursive;
+    display: inline;
+    font-size: .75em;
 }
