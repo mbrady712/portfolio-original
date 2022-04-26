@@ -2,10 +2,87 @@
     margin: 0;
     padding: 0;
 }
+
+/*SEVERAL PAGES*/
+
 div{
     font-family: pokemon;
     font-size: 1.2em;
 }
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: pokemon;
+    src: url(Pokemon_Generation_1_Regular/pokemon_generation_1.ttf) format("truetype");
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: 'Press Start 2P', cursive;
+}
+.linkedin{
+    text-decoration: none !important;
+}
+
+/*NAV*/
+
+.pagelink2{
+    text-decoration: none !important;
+    color: black;
+    margin-top: 100px !important;
+}
+.pagelink2:hover{
+    color: black !important;
+}
+nav{
+    border: 5px solid #004271;
+    width: 100%;
+    position: fixed !important;
+    height: 70px;
+    background-color: white;
+    z-index: 99;
+}
+.nav-item{
+    font-size: .75em !important;
+    font-family: 'Press Start 2P', cursive;
+}
+.linkarrow{
+    height: 30px;
+    visibility: hidden;
+    margin-bottom: 10px;
+}
+
+/*FOOTER*/
+
+footer{
+    border: 5px solid #004271;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2px;
+}
+.phone{
+    text-decoration: underline;
+    color: black;
+    font-size: .7em;
+    margin-left: -5px;
+}
+.bottom{
+    text-align: center;
+}
+.copy{
+    padding: 5px;
+    font-size: .7em;
+}
+.phonepic{
+    width: 20px;
+    height: 30px;
+}
+
+
+/*HOME*/
+
 .upper{
     position: relative;
     height: 70vh;
@@ -32,7 +109,6 @@ div{
         left: 100vw;
     }
 }
-
 .foesprite{
     position: absolute;
     top: 0;
@@ -161,23 +237,22 @@ table{
     height: 30px;
     text-decoration: none !important;
 }
-a{
-    text-decoration: none;
-}
 .icons{
     text-align: center;
 }
 .trainer{
     height: 100%;
 }
-.linkarrow{
-    height: 30px;
-    visibility: hidden;
-    margin-bottom: 10px;
-}
 .info{
     padding: 1px;
 }
+.arrowhome{
+    height: 30px;
+    visibility: hidden;
+}
+
+/*ABOUT ME*/
+
 .description{
     position: relative;
     border-left: 5px solid #004271;
@@ -185,11 +260,6 @@ a{
     height: 50vh;
     width: 100%;
     box-sizing: border-box;
-   
-}
-@font-face {
-    font-family: pokemon;
-    src: url(Pokemon_Generation_1_Regular/pokemon_generation_1.ttf) format("truetype");
 }
 .about{
     padding: 20px;
@@ -222,44 +292,22 @@ li{
     padding: 5px;
     list-style-type: none;
 }
-footer{
-    border: 5px solid #004271;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 2px;
+.pad{
+    padding-top: 70px;
 }
-.pagelink2{
-    text-decoration: none !important;
-    color: black;
-    margin-top: 100px !important;
-}
-.pagelink2:hover{
-    color: black !important;
-}
-nav{
-    border: 5px solid #004271;
-    width: 100%;
-    position: fixed !important;
-    height: 70px;
-    background-color: white;
-    z-index: 99;
-}
-.nav-item{
-    font-size: .75em !important;
+.percent{
     font-family: 'Press Start 2P', cursive;
+    display: inline;
+    font-size: .75em;
 }
+
+/*PROJECTS*/
+
 .projects{
     padding-top: 70px;
     border-left: 5px solid #004271;
     border-right: 5px solid #004271;
     box-sizing: border-box;
-}
-h1{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-family: 'Press Start 2P', cursive;
-
 }
 h2{
     font-size: 1em;
@@ -271,43 +319,19 @@ h2{
     margin-left: 10%;
     margin-bottom: 50px;
 }
-.phone{
-    text-decoration: underline;
-    color: black;
-    font-size: .7em;
-    margin-left: -5px;
-}
-.bottom{
-    text-align: center;
-}
-.copy{
-    padding: 5px;
-    font-size: .7em;
-}
-.phonepic{
-    width: 20px;
-    height: 30px;
-}
-.arrowhome{
-    height: 30px;
-    visibility: hidden;
-}
+
+/*CONTACT*/
+
 .contact{
     border-left: 5px solid #004271;
     border-right: 5px solid #004271;
     box-sizing: border-box;
     padding-top: 70px;
 }
-.linkedin{
-    text-decoration: none !important;
-}
 form{
     width: 60% !important;
     margin-left: 20% !important;
     margin-top: 50px !important;
-}
-.pad{
-    padding-top: 70px;
 }
 input{
     margin-bottom: 20px !important;
@@ -319,6 +343,9 @@ textarea{
     font-family: 'VT323', monospace !important;
     font-size: 1.5em !important;
 }
+
+/*INDIVIDUAL PROJECT PAGES*/
+
 .projdesc{
     border-right: 5px solid #004271;
     border-left: 5px solid #004271;
@@ -341,9 +368,4 @@ textarea{
 .sitelink{
     text-decoration: underline;
     color: black;
-}
-.percent{
-    font-family: 'Press Start 2P', cursive;
-    display: inline;
-    font-size: .75em;
 }
