@@ -45,14 +45,52 @@ nav{
     z-index: 99;
 }
 .nav-item{
-    font-size: .75em !important;
+    font-size: .6em !important;
     font-family: 'Press Start 2P', cursive;
+    background-color: white;
+   
 }
 .linkarrow{
     height: 30px;
     visibility: hidden;
     margin-bottom: 10px;
 }
+
+/*280 — 480px: Mobile devices*/
+@media only screen and (min-width: 280px) and (max-width: 480px){
+    .nav-item{
+        border-left: 5px solid #004271;
+        border-right: 5px solid #004271;
+        border-bottom: 5px solid #004271;
+    }
+    .homelink{
+        border-top: 5px solid #004271;
+    }
+ }
+     
+ /*481px — 768px: iPads, Tablets*/
+ @media only screen and (min-width: 481px) and (max-width: 768px){
+    .nav-item{
+        border-left: 5px solid #004271;
+        border-right: 5px solid #004271;
+        border-bottom: 5px solid #004271;
+    }
+    .homelink{
+        border-top: 5px solid #004271;
+    }
+ }
+     
+ /*769px — 991px: To give nav items an outline until Bootstrap breakpoint is reached*/
+ @media only screen and (min-width: 769px) and (max-width: 991px){
+    .nav-item{
+        border-left: 5px solid #004271;
+        border-right: 5px solid #004271;
+        border-bottom: 5px solid #004271;
+    }
+    .homelink{
+        border-top: 5px solid #004271;
+    }
+ }
 
 /*FOOTER*/
 
@@ -61,11 +99,15 @@ footer{
     box-sizing: border-box;
     width: 100%;
     padding: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 125px;
 }
 .phone{
     text-decoration: underline;
     color: black;
-    font-size: .7em;
+    font-size: .8em;
     margin-left: -5px;
 }
 .bottom{
@@ -147,8 +189,9 @@ footer{
     width: 45%;
     height: 23vh;
     text-align: right;
-    padding-right: 5%;
-    margin-bottom: 2vh;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     border-right: 5px solid black;
     border-bottom: 5px solid black;
     margin-right: 5%;
@@ -226,11 +269,12 @@ table{
     display: inline-block;
 }
 .portrait{
-    height: 70%;
-    width: 30%;
+    height: 175px;
+    width: 175px;
     border-radius: 100%;
-    margin-left: 35%;
-    margin-top: 2%;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
 }
 .social{
     width: 30px;
@@ -251,6 +295,126 @@ table{
     visibility: hidden;
 }
 
+
+/*280 — 480px: Mobile devices*/
+@media only screen and (min-width: 280px) and (max-width: 480px){
+    .portrait{
+        height: 100px;
+        width: 100px;
+    }
+    div{
+        font-size: 1em;
+    }
+    .icons{
+        margin-left: 25px;
+    }
+    .hp-bar{
+        width: 100px;
+    }
+    .playersprite{
+        height: 150px;
+        width: 150px;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .player{
+        margin-right: 10px;
+        margin-bottom: 40px;
+        width: 40%;
+    }
+    .mobinfo{
+        visibility: visible;
+    }
+    .emp{
+        visibility: hidden;
+    }
+    .script{
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+    .action{
+        position: static;
+        border-left: 5px solid #004271;
+        border-top: none;
+        width: 100%;
+        font-size: .75em;
+        height: auto;
+    }
+    .lower{
+        height: auto;
+    }
+}
+    
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .portrait{
+        width: 125px;
+        height: 125px;
+    }
+    .icons{
+        margin-left: 0;
+    }
+    div{
+        font-size: 1.25em;
+    }
+    .hp-bar{
+        width: 100px;
+    }
+    .playersprite{
+        height: 150px;
+        width: 150px;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+    .player{
+        margin-right: 10px;
+        margin-bottom: 60px;
+        width: 40%;
+    }
+    .mobinfo{
+        visibility: visible;
+    }
+    .emp{
+        visibility: hidden;
+    }
+    .script{
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+    .action{
+        position: static;
+        border-left: 5px solid #004271;
+        border-top: none;
+        width: 100%;
+        font-size: .75em;
+        height: auto;
+    }
+    .lower{
+        height: auto;
+    }
+}
+    
+/*769px — 1099px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1099px){
+    .playersprite{
+        height: 300px;
+        width: 300px;
+    }
+    .action{
+        width: 50%;
+        font-size: 1em;
+    }
+    .script{
+        width: 50%;
+    }
+}
+/*1025px — 1280px: Desktops, Large Screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+    
+}
+
 /*ABOUT ME*/
 
 .description{
@@ -260,6 +424,7 @@ table{
     height: 50vh;
     width: 100%;
     box-sizing: border-box;
+    font-size: 1em;
 }
 .about{
     padding: 20px;
@@ -278,10 +443,10 @@ table{
     object-fit: cover;
     object-position: 50% 0%;
     margin-top: 10px;
-    margin-left: 21%;
+    margin-left: 250px;
 }
 .num{
-    margin-left: 25%;
+    margin-left: 300px;
 }
 .right{
     position: absolute;
@@ -299,6 +464,75 @@ li{
     font-family: 'Press Start 2P', cursive;
     display: inline;
     font-size: .75em;
+}
+/*280 — 480px: Mobile devices*/
+@media only screen and (min-width: 280px) and (max-width: 480px){
+   .right{
+       position: static;
+   }
+   .headshot{
+       display: block;
+       margin: auto;
+   }
+   .left{
+    padding-top: 10px;
+    }
+    .description{
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .num{
+        text-align: center;
+        margin: 0;
+    }
+}
+    
+/*481px — 768px: iPads, Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .right{
+        position: static;
+    }
+    .headshot{
+        display: block;
+        margin: auto;
+    }
+    .left{
+     padding-top: 10px;
+     }
+    .description{
+         height: auto;
+         padding-bottom: 10px;
+    }
+    .num{
+        text-align: center;
+        margin: 0;
+    }
+}
+    
+/*769px — 1099px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1099px){
+    .right{
+        position: static;
+    }
+    .headshot{
+        display: block;
+        margin: auto;
+    }
+    .left{
+     padding-top: 10px;
+     }
+    .description{
+         height: auto;
+         padding-bottom: 10px;
+    }
+    .num{
+        text-align: center;
+        margin: 0;
+    }
+}
+/*1025px — 1280px: Desktops, Large Screens*/
+@media only screen and (min-width: 1025px) and (max-width: 1280px){
+    
 }
 
 /*PROJECTS*/
@@ -319,6 +553,7 @@ h2{
     margin-left: 10%;
     margin-bottom: 50px;
 }
+
 
 /*CONTACT*/
 
@@ -343,6 +578,38 @@ textarea{
     font-family: 'VT323', monospace !important;
     font-size: 1.5em !important;
 }
+.pixelhead{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+.pagecontainer{
+    position: relative;
+  min-height: 100vh;
+}
+.contentwrap{
+    padding-bottom: 125px; 
+}
+
+/*280 — 480px: Mobile devices*/
+@media only screen and (min-width: 280px) and (max-width: 480px){
+    form{
+        width: 100% !important;
+        margin-left: 0% !important;
+        margin-top: 50px !important;
+    }
+  }
+      
+  /*481px — 768px: iPads, Tablets*/
+  @media only screen and (min-width: 481px) and (max-width: 768px){
+    form{
+        width: 100% !important;
+        margin-left: 0% !important;
+        margin-top: 50px !important;
+    }
+  }
+      
 
 /*INDIVIDUAL PROJECT PAGES*/
 
@@ -369,3 +636,25 @@ textarea{
     text-decoration: underline;
     color: black;
 }
+
+/*280 — 480px: Mobile devices*/
+@media only screen and (min-width: 280px) and (max-width: 480px){
+    .sitepic{
+        width: 100%;
+        margin: 0;
+    }
+  }
+      
+  /*481px — 768px: iPads, Tablets*/
+  @media only screen and (min-width: 481px) and (max-width: 768px){
+
+  }
+      
+  /*769px — 1099px: Small screens, laptops*/
+  @media only screen and (min-width: 769px) and (max-width: 1099px){
+      
+  }
+  /*1025px — 1280px: Desktops, Large Screens*/
+  @media only screen and (min-width: 1025px) and (max-width: 1280px){
+      
+  }
