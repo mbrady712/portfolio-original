@@ -133,13 +133,12 @@ footer{
     position: absolute;
     top: 0;
     left: 0;
-    width: 45%;
+    width: 40%;
     height: 23vh;
     margin-top: 2vh;
     text-align: right;
-    padding-right: 5%;
-    border-left: 5px solid black;
-    border-bottom: 5px solid black;
+    padding-right: 20px;
+    border: 5px solid black;
     margin-left: 5%;
     animation: move4;
     animation-duration: 2s;
@@ -185,14 +184,13 @@ footer{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 45%;
+    width: 40%;
     height: 23vh;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 20px;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
+    border: 5px solid black;
     margin-right: 5%;
     animation-name: move1;
     animation-duration: 2s;
@@ -314,11 +312,11 @@ table{
         height: 150px;
         width: 150px;
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
     .player{
         margin-right: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         width: 40%;
     }
     .mobinfo{
@@ -435,17 +433,23 @@ table{
     font-family: 'VT323', monospace;
     font-size: 2em;
 }
+.statlist{
+    list-style-type: circle !important;
+    margin-left: 20px;
+}
 .headshot{
     width: 250px;
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 0%;
-    margin-top: 10px;
-    margin-left: 250px;
 }
-.num{
-    margin-left: 300px;
+.left{
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 .right{
     position: absolute;
@@ -469,11 +473,8 @@ li{
    .right{
        position: static;
    }
-   .headshot{
-       display: block;
-       margin: auto;
-   }
    .left{
+    width: 100%;
     padding-top: 10px;
     }
     .description{
@@ -491,12 +492,9 @@ li{
     .right{
         position: static;
     }
-    .headshot{
-        display: block;
-        margin: auto;
-    }
     .left{
-     padding-top: 10px;
+    width: 100%;
+    padding-top: 10px;
      }
     .description{
          height: auto;
@@ -513,12 +511,9 @@ li{
     .right{
         position: static;
     }
-    .headshot{
-        display: block;
-        margin: auto;
-    }
     .left{
-     padding-top: 10px;
+        width: 100%;
+        padding-top: 10px;
      }
     .description{
          height: auto;
@@ -654,16 +649,3 @@ textarea{
     }
   }
       
-  /*481px — 768px: iPads, Tablets*/
-  @media only screen and (min-width: 481px) and (max-width: 768px){
-
-  }
-      
-  /*769px — 1099px: Small screens, laptops*/
-  @media only screen and (min-width: 769px) and (max-width: 1099px){
-      
-  }
-  /*1025px — 1280px: Desktops, Large Screens*/
-  @media only screen and (min-width: 1025px) and (max-width: 1280px){
-      
-  }
