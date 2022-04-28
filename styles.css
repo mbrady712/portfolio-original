@@ -4,7 +4,6 @@
 }
 
 /*SEVERAL PAGES*/
-
 div{
     font-family: pokemon;
     font-size: 1.2em;
@@ -41,14 +40,14 @@ nav{
     width: 100%;
     position: fixed !important;
     height: 70px;
+    z-index: 2;
     background-color: white;
-    z-index: 99;
+    
 }
 .nav-item{
-    font-size: .6em !important;
+    font-size: .5em !important;
     font-family: 'Press Start 2P', cursive;
     background-color: white;
-   
 }
 .linkarrow{
     height: 30px;
@@ -530,10 +529,7 @@ li{
         margin: 0;
     }
 }
-/*1025px — 1280px: Desktops, Large Screens*/
-@media only screen and (min-width: 1025px) and (max-width: 1280px){
-    
-}
+
 
 /*PROJECTS*/
 
@@ -558,15 +554,16 @@ h2{
 /*CONTACT*/
 
 .contact{
+    padding-top: 70px;
+    min-height: 100vh;
     border-left: 5px solid #004271;
     border-right: 5px solid #004271;
-    box-sizing: border-box;
-    padding-top: 70px;
 }
 form{
     width: 60% !important;
     margin-left: 20% !important;
     margin-top: 50px !important;
+    font-size: .5em;
 }
 input{
     margin-bottom: 20px !important;
@@ -579,14 +576,14 @@ textarea{
     font-size: 1.5em !important;
 }
 .pixelhead{
-    width: 200px;
-    height: 200px;
+    width: 30vh;
+    height: 30vh;
     margin: auto;
     display: block;
 }
 .pagecontainer{
     position: relative;
-  min-height: 100vh;
+    min-height: 100vh;
 }
 .contentwrap{
     padding-bottom: 125px; 
@@ -598,6 +595,7 @@ textarea{
         width: 100% !important;
         margin-left: 0% !important;
         margin-top: 50px !important;
+        font-size: 1em;
     }
   }
       
@@ -607,8 +605,18 @@ textarea{
         width: 100% !important;
         margin-left: 0% !important;
         margin-top: 50px !important;
+        font-size: .75em;
     }
   }
+  /*769px — 1000px: Small screens, laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1000px){
+    form{
+        width: 100% !important;
+        margin-left: 0% !important;
+        margin-top: 50px !important;
+        font-size: .75em;
+    }
+}
       
 
 /*INDIVIDUAL PROJECT PAGES*/
@@ -617,6 +625,7 @@ textarea{
     border-right: 5px solid #004271;
     border-left: 5px solid #004271;
     padding-top: 70px;
+    min-height: 100vh;
 }
 .sitepic{
     width: 60%;
