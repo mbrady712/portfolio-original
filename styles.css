@@ -167,7 +167,7 @@ footer{
 .playersprite{
     position: absolute;
     bottom: 0;
-    left: 5%;
+    left: 10%;
     width: 50%;
     height: 45vh;
     animation: move2;
@@ -307,7 +307,8 @@ table{
     .playersprite{
         height: 150px;
         width: 150px;
-        padding-bottom: 10px;
+        bottom: 20%;
+        left: 5%;
     }
     .foe{
         height: 17vh;
@@ -316,6 +317,7 @@ table{
         margin-right: 10px;
         width: 40%;
         height: 17vh;
+        bottom: 20%;
     }
     .script{
         width: 100%;
