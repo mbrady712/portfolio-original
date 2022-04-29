@@ -167,10 +167,9 @@ footer{
 .playersprite{
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 5%;
     width: 50%;
     height: 45vh;
-    padding-left: 10%;
     animation: move2;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -302,28 +301,21 @@ table{
     div{
         font-size: 1em;
     }
-    .icons{
-        margin-left: 25px;
-    }
     .hp-bar{
         width: 100px;
     }
     .playersprite{
         height: 150px;
         width: 150px;
-        padding: 0;
-        margin-bottom: 50px;
+        padding-bottom: 10px;
+    }
+    .foe{
+        height: 17vh;
     }
     .player{
         margin-right: 10px;
-        margin-bottom: 50px;
         width: 40%;
-    }
-    .mobinfo{
-        visibility: visible;
-    }
-    .emp{
-        visibility: hidden;
+        height: 17vh;
     }
     .script{
         width: 100%;
