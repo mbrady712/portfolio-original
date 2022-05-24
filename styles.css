@@ -108,6 +108,10 @@ footer{
     color: black;
     font-size: .8em;
     margin-left: -5px;
+    transition: .25s;
+}
+.phone:hover{
+    color: #004271;
 }
 .bottom{
     text-align: center;
