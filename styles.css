@@ -637,6 +637,9 @@ textarea{
     text-decoration: underline;
     color: black;
 }
+.sitelink:hover{
+    color: #004271;
+}
 
 /*280 — 480px: Mobile devices*/
 @media only screen and (min-width: 280px) and (max-width: 480px){
