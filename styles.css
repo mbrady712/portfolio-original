@@ -5,7 +5,7 @@
 
 /*SEVERAL PAGES*/
 div{
-    font-family: pokemon;
+    font-family: pokemon, 'Courier New', Courier, monospace;
     font-size: 1.2em;
 }
 a{
@@ -147,6 +147,7 @@ footer{
     animation: move4;
     animation-duration: 2s;
     animation-timing-function: linear;
+    border-radius: 5px;
 }
 @keyframes move4{
     0%{
@@ -198,6 +199,7 @@ footer{
     animation-name: move1;
     animation-duration: 2s;
     animation-timing-function: linear;
+    border-radius: 5px;
 }
 @keyframes move1{
     0%{
@@ -541,6 +543,8 @@ th{
     width: 80%;
     margin-left: 10%;
     margin-bottom: 50px;
+    border: 5px solid #004271;
+    border-radius: 5px;
 }
 
 /*CONTACT*/
@@ -622,6 +626,8 @@ textarea{
 .sitepic{
     width: 60%;
     margin-left: 20%;
+    border: 5px solid #004271;
+    border-radius: 5px;
 }
 .descwrap{
     margin-top: 50px;
