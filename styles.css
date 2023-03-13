@@ -277,6 +277,7 @@ table{
     margin: auto;
     display: block;
     margin-top: 10px;
+    object-fit: cover;
 }
 .social{
     width: 30px;
